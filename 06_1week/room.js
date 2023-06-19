@@ -1,5 +1,6 @@
 /**
  *  백준 방 배정
+ * https://www.acmicpc.net/problem/13300
  */
 
 const fs = require("fs");
@@ -43,7 +44,7 @@ for (let i of memberArr) {
     room++;
   }
 }
-console.log(roomObj);
+
 for (let i of Object.keys(roomObj)) {
   if (roomObj[i][1] !== 0) room++;
   if (roomObj[i][0] !== 0) room++;

@@ -1,5 +1,6 @@
 /**
  * 백준 개수 세기
+ *
  */
 
 const fs = require("fs");

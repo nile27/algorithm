@@ -1,5 +1,6 @@
 /**
  * 백준 요세푸스 문제
+ * https://www.acmicpc.net/problem/1158
  */
 
 const fs = require("fs");

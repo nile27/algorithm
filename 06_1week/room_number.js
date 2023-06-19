@@ -1,12 +1,13 @@
 /**
  * 백준 방 번호
+ * https://www.acmicpc.net/problem/1475
  */
 
 const fs = require("fs");
 const input = fs.readFileSync("input.txt").toString().trim();
 
 let [j, answer] = [0, 0];
-let keyArr = Array.from({ length: 11 }, (v) => 0);
+let keyArr = Array.from({ length: 10 }, (v) => 0);
 
 while (j <= 9) {
   for (let i of input) {
