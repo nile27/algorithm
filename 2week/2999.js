@@ -4,11 +4,11 @@
  */
 
 const fs = require("fs");
-const input = fs.readFileSync("../input.txt").toString().trim().split("");
+const input = fs.readFileSync("../input.txt").toString().trim();
 
 const Sqrt = () => {
-  let [R, C] = [1, 1];
-  for (let i = 1; i <= Math.ceil(Math.sqrt(input.length)); i++) {
+  let [R, C] = [1, 0];
+  for (let i = 1; i < parseInt(Math.sqrt(input.length)) + 0.1; i++) {
     if (input.length % i === 0) {
       R = i;
       C = input.length / i;
@@ -16,9 +16,13 @@ const Sqrt = () => {
   }
   return { R, C };
 };
-console.log(Sqrt());
-let arr = Array.from({ length: Sqrt().C }, (_, i) =>
-  Array.from({ length: Sqrt().R }, (_, idx) => input[i + idx * Sqrt().C])
+
+console.log(parseInt(Math.sqrt(input.length)));
+
+let arr = Array.from({ length: Sqrt().R }, (_, i) =>
+  Array.from({ length: Sqrt().C }, (_, idx) => input[i + idx * Sqrt().R])
 );
 
+console.log(Sqrt());
+console.log(arr);
 console.log(arr.flat().join(""));
