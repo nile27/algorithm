@@ -1,6 +1,6 @@
 const fs = require("fs");
-const input = fs.readFileSync("../input.txt").toString().trim().split(" ");
-let leng = input.shift();
+const input = fs.readFileSync("./input.txt").toString().trim().split(" ");
+let leng = Number(input.shift());
 let ans = [];
 function quad(n, from, to, other) {
   if (n === 0) return;

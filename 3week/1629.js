@@ -5,7 +5,7 @@
 
 const fs = require("fs");
 const [A, B, C] = fs
-  .readFileSync("../input.txt")
+  .readFileSync("./input.txt")
   .toString()
   .trim()
   .split(" ")
