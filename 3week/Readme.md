@@ -272,7 +272,7 @@ QuadTree(input, leng);
 console.log(ans.trim());
 ```
 
-# 곱셈\_1629
+# 별 찍기 - 10_2447
 
 ## 문제 설명
 
