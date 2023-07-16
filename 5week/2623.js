@@ -25,7 +25,7 @@ function answersort() {
     ans.push(zero);
   }
 }
-
+14;
 for (let i = 0; i < input.length; i++) {
   input[i].shift();
   for (let j = 0; j < input[i].length - 1; j++) {
