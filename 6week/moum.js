@@ -3,20 +3,20 @@ function solution(word) {
   let arr = ["A", "E", "I", "O", "U"];
   let keyword = [];
 
-  function moum(arr, n) {
+  function moum(arr) {
     if (word === keyword.join("") || keyword.length >= 5) return;
 
     for (let i = 0; i < arr.length; i++) {
       keyword.push(arr[i]);
       answer++;
-      moum(arr, n);
+      moum(arr);
       if (word === keyword.join("")) break;
       keyword.pop(arr[i]);
     }
   }
 
   for (let i = 0; i < arr.length; i++) {
-    moum(arr, 0);
+    moum(arr);
     arr.push(arr.shift());
     if (word === keyword.join("")) break;
   }
