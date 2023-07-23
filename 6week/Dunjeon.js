@@ -4,7 +4,7 @@ function solution(k, dungeons) {
   let visit = Array.from({ length: dungeons.length }, () => true);
 
   function dfs(arr, k) {
-    if (k <= 0) {
+    if (k < 0) {
       ans < set.length - 1 ? (ans = set.length - 1) : null;
       return;
     } else if (
