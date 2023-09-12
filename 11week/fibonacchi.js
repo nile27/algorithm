@@ -15,7 +15,7 @@ function solution(n) {
     if (i == 1) answer.push(1);
     if (i >= 2) {
       var sum = answer[i - 1] + answer[i - 2];
-      answer.push(sum);
+      answer.push(sum % 1234567);
     }
   }
   var result = answer[n] % 1234567;
