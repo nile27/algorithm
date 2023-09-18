@@ -1,3 +1,4 @@
+//프로그래머스 행렬 곱셈
 function solution(arr1, arr2) {
   let answer = [];
   let sumArr = [];
