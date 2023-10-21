@@ -1,4 +1,4 @@
-// 프로그래머스 가장 가까운 같은 글자
+// 프로그래머스 가장 가까운 같은 글자.js
 function solution(s) {
   var answer = [];
   let table = {};
