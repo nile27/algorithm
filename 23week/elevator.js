@@ -16,8 +16,6 @@ function solution(storey) {
       storey -= (parseInt(storey / numArr[i]) + 1) * numArr[i];
     }
     storey = Math.abs(storey);
-
-    console.log(single, double, answer, storey, numArr[i]);
   }
 
   return answer;
