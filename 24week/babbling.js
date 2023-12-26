@@ -1,4 +1,4 @@
-// 프로그래머스 옹알이(2)
+// 프로그래머스 옹알이 (2)
 function solution(babbling) {
   var answer = 0;
   let bab = ["aya", "ye", "woo", "ma"];
