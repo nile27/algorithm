@@ -1,0 +1,27 @@
+const fs = require("fs");
+const input = fs.readFileSync("./input.txt").toString().trim();
+
+const len = input.length;
+let result = 0;
+let str = "";
+let strLen = 0;
+
+function isTrue(s, len) {
+  for (let i = 0; i < Math.floor(len / 2); i++) {
+    if (s[i] !== s[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+for (let i = 0; i < len; i++) {
+  str = input.slice(i);
+  strLen = str.length;
+  if (isTrue(str, strLen)) {
+    result = len + i;
+    break;
+  }
+}
+
+console.log(result);
