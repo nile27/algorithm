@@ -13,7 +13,7 @@ function solution(n, w, num) {
 
   for (let i = 0; i < boxArr.length; i++) {
     idx = boxArr[i].findIndex((x) => x === num);
-    console.log(idx);
+
     if (idx !== -1) {
       break;
     }
